@@ -185,9 +185,12 @@
     margin: 0 auto;
     display: flex;
     li {
-      width: 120px;
+      max-width: 120px;
+      img {
+        width: 100%;
+      }
       .item {
-        width: 115px;
+        max-width: 115px;
         margin-bottom: 8px;
       }
       .arrow {
@@ -213,10 +216,10 @@
 .list {
   display: flex;
   flex-wrap: wrap;
-  
+
   li {
     margin-right: 15px;
-  
+
     position: relative;
     width: 259px;
     height: 459px;
@@ -282,7 +285,7 @@
   .cartItem {
     display: flex;
     width: 255px;
-    img{
+    img {
       margin-right: 8px;
     }
   }
@@ -300,23 +303,23 @@
       line-height: 80px;
       width: 150px;
     }
-    h4{
+    h4 {
       font-size: 20px;
       display: flex;
       align-items: center;
     }
   }
-  a{
+  a {
     width: 40px;
     line-height: 88px;
     margin-left: 30px;
   }
 }
-.del{
+.del {
   display: flex;
   justify-content: space-between;
 }
-.delete{
+.delete {
   text-decoration: none;
   width: 160px;
   height: 48px;
@@ -327,21 +330,21 @@
   display: block;
   color: #000000;
 }
-.total{
+.total {
   float: right;
   font-size: 20px;
-  .finalTotal{
-    font-size:28px;
+  .finalTotal {
+    font-size: 28px;
     margin-left: 20px;
     font-weight: bold;
   }
 }
 
-.order{
+.order {
   max-width: 350px;
   margin: 0 auto;
   padding-bottom: 80px;
-  input{
+  input {
     width: 100%;
   }
   h3 {
@@ -362,7 +365,6 @@
 }
 
 .orderInfo-formGroup {
-  
   margin: 0 auto 15px;
 }
 
@@ -374,7 +376,7 @@
 .orderInfo-input {
   width: 100%;
   min-height: 38px;
-  border: 1px solid #CED4DA;
+  border: 1px solid #ced4da;
   border-radius: 5px;
   text-indent: 1rem;
   margin-right: 10px;
@@ -390,17 +392,27 @@
   left: 103%;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  color: #C72424;
+  transform: translateY(-50%);
+  color: #c72424;
 }
-.orderInfo-btn{
+.orderInfo-btn {
   width: 225px;
   height: 48px;
   background-color: #000000;
   color: white;
 }
-.delSingleOrder-Btn{
+.delSingleOrder-Btn {
   background-color: rgb(163, 40, 40);
   color: white;
   border: none;
+}
+
+@media (max-width: 768px) {
+  .list {
+    justify-content: center;
+  }
+  .selectPorducts{
+  margin-left: 100px;
+    }
+  
 }

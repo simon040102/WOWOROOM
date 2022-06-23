@@ -301,11 +301,15 @@ table {
 }
 
 .transport ul li {
-  width: 120px;
+  max-width: 120px;
+}
+
+.transport ul li img {
+  width: 100%;
 }
 
 .transport ul li .item {
-  width: 115px;
+  max-width: 115px;
   margin-bottom: 8px;
 }
 
@@ -534,7 +538,7 @@ table {
 .orderInfo-input {
   width: 100%;
   min-height: 38px;
-  border: 1px solid #CED4DA;
+  border: 1px solid #ced4da;
   border-radius: 5px;
   text-indent: 1rem;
   margin-right: 10px;
@@ -551,7 +555,7 @@ table {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  color: #C72424;
+  color: #c72424;
 }
 
 .orderInfo-btn {
@@ -565,6 +569,17 @@ table {
   background-color: #a32828;
   color: white;
   border: none;
+}
+
+@media (max-width: 768px) {
+  .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .selectPorducts {
+    margin-left: 100px;
+  }
 }
 
 .backWarp {
