@@ -355,11 +355,7 @@
   input {
     width: 100%;
     transition: 0.3s;
-     &:hover{
-        background-color: #301E5F;
-
-      }
-  }
+    }
   h3 {
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 500;
@@ -413,6 +409,10 @@
   height: 48px;
   background-color: #000000;
   color: white;
+   &:hover{
+        background-color: #301E5F;
+
+      }
 }
 .delSingleOrder-Btn {
   background-color: rgb(163, 40, 40);

@@ -522,10 +522,6 @@ table {
   transition: 0.3s;
 }
 
-.order input:hover {
-  background-color: #301E5F;
-}
-
 .order h3 {
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 500;
@@ -580,6 +576,10 @@ table {
   height: 48px;
   background-color: #000000;
   color: white;
+}
+
+.orderInfo-btn:hover {
+  background-color: #301E5F;
 }
 
 .delSingleOrder-Btn {
