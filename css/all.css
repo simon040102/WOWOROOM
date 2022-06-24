@@ -62,8 +62,10 @@ table {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1140px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .topbar {
@@ -298,6 +300,9 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .transport ul li {
@@ -359,6 +364,12 @@ table {
   line-height: 48px;
   text-align: center;
   margin-bottom: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.list li a:hover {
+  background-color: #301E5F;
 }
 
 .list li h3 {
@@ -507,6 +518,12 @@ table {
 
 .order input {
   width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.order input:hover {
+  background-color: #301E5F;
 }
 
 .order h3 {
@@ -571,7 +588,7 @@ table {
   border: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 996px) {
   .list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -579,6 +596,35 @@ table {
   }
   .selectPorducts {
     margin-left: 100px;
+  }
+  .banner {
+    background-image: url(../images/Banner.png);
+    height: 420px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: auto;
+    -o-object-fit: none;
+       object-fit: none;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .topbar {
+    display: block;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .introduce ul {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .introduce ul li {
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+  .transport ul li .arrow {
+    margin-left: 0px;
   }
 }
 
