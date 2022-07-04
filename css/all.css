@@ -646,9 +646,15 @@ table {
   margin-bottom: 8px;
 }
 
+.table {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top: 100px;
+}
+
 .orderPage-table {
   border: 1px solid #000000;
-  width: 100%;
+  width: 1110px;
 }
 
 .orderList {

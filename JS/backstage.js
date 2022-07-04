@@ -13,6 +13,7 @@ axios
   )
   .then(function (response) {
     data = response.data.orders;
+    console.log(data)
     showData();
   });
   }
